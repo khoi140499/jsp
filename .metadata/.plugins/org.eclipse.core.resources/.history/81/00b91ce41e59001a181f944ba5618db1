@@ -1,0 +1,28 @@
+package Test;
+
+public class Name {
+	 private String ten1;
+	 private String ten2;
+	 
+	public Name() {
+		super();
+	}
+	public Name(String ten1, String ten2) {
+		super();
+		this.ten1 = ten1;
+		this.ten2 = ten2;
+	}
+	public String getTen1() {
+		return ten1;
+	}
+	public void setTen1(String ten1) {
+		this.ten1 = ten1;
+	}
+	public String getTen2() {
+		return ten2;
+	}
+	public void setTen2(String ten2) {
+		this.ten2 = ten2;
+	}
+	 
+}

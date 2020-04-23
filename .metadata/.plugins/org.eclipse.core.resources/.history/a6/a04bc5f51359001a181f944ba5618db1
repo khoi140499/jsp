@@ -1,0 +1,42 @@
+package Test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class VTest
+ */
+@WebServlet("/VTest")
+public class VTest extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public VTest() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+ 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		PrintWriter pr=response.getWriter();
+		pr.println("<table>");
+		pr.println("<tr>");
+		pr.println("<td>name</td>");
+		pr.println("<td>age</td>");
+		pr.println("</tr>");
+		pr.println("<tr>");
+		pr.println("<td>Dang Khoi </td>");
+		pr.println("<td>20</td>");
+		pr.println("</tr>");
+		pr.println("</table>");
+	}
+
+}

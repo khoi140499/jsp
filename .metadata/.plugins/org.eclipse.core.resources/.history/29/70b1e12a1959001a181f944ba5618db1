@@ -1,0 +1,58 @@
+package Test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class VTest
+ */
+@WebServlet("/VTest")
+public class VTest extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public VTest() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+ 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		PrintWriter pr=response.getWriter();
+		List<Name> l=new ArrayList<Name>();
+		Name a=new Name("Name", "Age");
+		Name b=new Name("Dang Khoi", "21");
+		l.add(a);
+		l.add(b);
+		pr.println("<head>");
+				pr.println("<title>Document</title>");
+				pr.println("<style>");
+				pr.println("table, tr, td{");
+				pr.println("border:1px solid black;");
+				pr.println("}");
+				pr.println("</style>");
+				pr.println("</head>");
+				pr.println("<body>");
+				pr.println("<table>");
+				for(Name as:l){
+					pr.println("<tr>");
+					pr.println("<td>"+as.getTen1()+"</td>");
+					pr.println("<td>"+as.getTen2()+"</td>");
+					pr.println("</tr>");
+				}
+					pr.println("</table>");
+					pr.println("</body>");
+	}
+
+}

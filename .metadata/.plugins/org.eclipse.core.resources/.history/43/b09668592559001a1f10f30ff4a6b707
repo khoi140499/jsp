@@ -1,0 +1,210 @@
+package Test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class VTest
+ */
+@WebServlet("/VTest")
+public class VTest extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public VTest() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+ 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		PrintWriter pr=response.getWriter();
+		List<Name> l=new ArrayList<Name>();
+		Name a=new Name("D:\\web\\hnc\\img\\250_45217_hnc_steelseries_rival_710__4_.jpg",
+				"D:\\web\\hnc\\img\\steelseries.jpg",
+				"D:\\web\\hnc\\img\\as.jpg",
+				"D:\\web\\hnc\\img\\FAVPNG_shopping-cart-icon-product-return_TQmkN8uk.png",
+				"D:\\web\\hnc\\img\\Captureas.png");
+		l.add(a);
+		pr.println("<head>");
+				pr.println("<meta charset="+"utf-8"+">");
+				pr.println("<title>Document</title>");
+				pr.println("<style>");
+				pr.println("#row1_ct{");
+				pr.println("height: 20px;");
+				pr.println("margin-left: 21px;");
+				pr.println("}");
+				pr.println("#row1_sp{");
+				 pr.println("float: left;");
+				 pr.println("width: 295px;");
+				 pr.println("height: 430px;");
+				 pr.println("background: white;");
+				 pr.println("border: 1px solid red;");
+				 pr.println("}");
+				 pr.println("#row1_txt{");
+				 pr.println("font-size: 17px;");
+				 pr.println("color: #D82A29;");
+				 pr.println("text-align: center;");
+				 pr.println("height: 60px;");
+				 pr.println("line-height: 55px;");
+				 pr.println("}");
+				 pr.println("#r1_sp_img{");
+				 pr.println("height: 230px;");
+				 pr.println("text-align: center;");
+				 pr.println("padding-top: 10px;");
+				 pr.println("}");
+				 pr.println("#r1_sp_img img{");
+				 pr.println("width: 105px;");
+				 pr.println("}");
+				 pr.println("#row_btn{");
+				 pr.println("width: 250px;");
+				 pr.println("height: 40px;");
+				 pr.println("background: #243A76;");
+				 pr.println("margin-left: 22px;");
+				 pr.println("border-radius: 3px;");
+				 pr.println("text-align: center;");
+				 pr.println("line-height: 38px;");
+				 pr.println("}");
+				 pr.println("#row_btn a{");
+				 pr.println("text-decoration: none;");
+				 pr.println("font-size: 17px;");
+				 pr.println("color: white;");
+				 pr.println("}");
+				 pr.println("#rate_img{");
+				 pr.println("height: 20px;");
+				 pr.println("margin-left: 27px;");
+				 pr.println("}");
+				 pr.println("#rate_img img{");
+				 pr.println("width: 71px;");
+				 pr.println("}");
+				 pr.println("#rate_txt{");
+				 pr.println("position: absolute;");
+				 pr.println("margin-top: -17px;");
+				 pr.println("margin-left: 205px;");
+				 pr.println("}");
+				 pr.println("#rate_txt img{");
+				 pr.println("height: 13px;");
+				 pr.println("}");
+				 pr.println("#text1_r1{");
+				 pr.println("margin-left: 26px;");
+				 pr.println("margin-top: 10px;");
+				 pr.println("}");
+				 pr.println("#text1_r1 a{");
+				 pr.println("text-decoration: none;");
+				 pr.println("font-size: 15.5px;");
+				 pr.println("font-family: initial;");
+				 pr.println("color: #606060;");
+				 pr.println("}");
+				 pr.println("#text2_r1{");
+				 pr.println("margin-left: 26px;");
+				 pr.println("margin-top: 5px;");
+				 pr.println("}");
+				 pr.println("#text2_r1 span{");
+				 pr.println("text-decoration: line-through;");
+				 pr.println("font-weight: bold;");
+				 pr.println("font-size: 18px;");
+				 pr.println("color: #666666;");
+				 pr.println("}");
+				 pr.println("#text2_r1 b{");
+				 pr.println("color: red;");
+				 pr.println("margin-left: 5px;");
+				 pr.println("}");
+				 pr.println("#text3_r1{");
+				 pr.println("margin-left: 26px;");
+				 pr.println("margin-top: 5px;");
+				 pr.println("font-size: 21px;");
+				 pr.println("font-weight: bold;");
+				 pr.println("font-family: sans-serif;");
+				 pr.println("}");
+				 pr.println("#text4_r1{");
+				 pr.println("height: 40px;");
+				 pr.println("}");
+				 pr.println("#d1{");
+				 pr.println("float: left;");
+				 pr.println("margin-top: 12px;");
+				 pr.println("margin-left: 26px;");
+				 pr.println("color: #4AC97C;");
+				 pr.println("font-size: 14px;");
+				 pr.println("}");
+				 pr.println("#d2{");
+				 pr.println("float: left;");
+				 pr.println("margin-top: 12px;");
+				 pr.println("margin-left: 110px;");
+				 pr.println("font-size: 14px;");
+				 pr.println("}");
+				 pr.println("#d2 a{");
+				 pr.println("text-decoration: none;");
+				 pr.println("color: #4C4C4C;");
+				 pr.println("}");
+				 pr.println("#r1_sp_text{");
+				 pr.println("height: 25px;");
+				 pr.println("font-size: 13px;");
+				 pr.println("font-weight: bold;");
+				 pr.println("color: #7B7B7B;");
+				 pr.println("margin-left: 30px;");
+				 pr.println("padding-top: 5px;");
+				 pr.println("}");
+				 pr.println("#r1_img1{");
+				 pr.println("position: absolute;");
+				 pr.println("margin-top: -28px;");
+				 pr.println("}");
+				 pr.println("#r1_img1 img{");
+				 pr.println("width: 12px;");
+				 pr.println("margin-left: 173px;");
+				pr.println("}");
+				pr.println("#r1_img2{");
+				pr.println("position: absolute;");
+				pr.println("margin-left: 251px;");
+				pr.println("margin-top: -61px;");
+				pr.println("}");
+				pr.println("span{");
+				pr.println("font-family: arial;");
+				pr.println("}");
+				pr.println("</style>");
+				pr.println("</head>");
+				pr.println("<body>");
+				for(Name as:l){
+				pr.println("<div id="+"row1_sp"+">");
+				pr.println("<div id="+"r1_sp_text"+">");
+				pr.println("<span>MÃ SP: MESS101</span>");
+				pr.println("</div>");
+				pr.println("<div id="+"r1_sp_img"+">");
+				pr.println("<a href="+"#"+"><img src="+as.getLink1()+"></a>");
+				pr.println("</div>");
+				pr.println("<div id="+"r1_rate"+">");
+				pr.println("<div id="+"rate_img"+"><img src="+as.getLink2()+"></div>");
+				pr.println("<div id="+"rate_txt"+"><img src="+as.getLink3()+"></div>");
+				pr.println("</div>");
+				pr.println("<div id="+"text1_r1"+">");
+				pr.println("<a href="+"#"+"><span>Chuột chơi game SteelSeries Rival 710 (62334)</span></a>");
+				pr.println("</div>");
+				pr.println("<div id="+"text2_r1"+">");
+				pr.println("<span>2.783.000</span> <b>(Tiết kiệm 294.000 đ)</b>");
+				pr.println("</div>");
+				pr.println("<div id="+"text3_r1"+">");
+				pr.println("<span>2.240.000 đ</span>");
+				pr.println("</div>");
+				pr.println("<div id="+"text4_r1"+">");
+				pr.println("<div id="+"d1"+"><span>Còn hàng</span></div>");
+				pr.println("<div id="+"d2"+"><a href="+"#"+"><span>Thêm vào giỏ</span></a></div>");
+				pr.println("</div>");
+				pr.println("<div id="+"r1_img1"+"><img src="+a.getLink4()+"></div>");
+				pr.println("<div id="+"r1_img2"+"><img src="+a.getLink5()+"></div>");
+				pr.println("</div>");
+				pr.println("<br>");
+				}
+				pr.println("</body>");
+	}
+
+}
